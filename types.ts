@@ -3,4 +3,6 @@ export interface SkillLevel {
   title: string;
   hardSkills: string[];
   softSkills: string[];
+  experience: string;
+  responsibilities: string[];
 }
