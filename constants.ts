@@ -3,16 +3,17 @@ import type { SkillLevel } from './types';
 export const CAREER_PATH_DATA: SkillLevel[] = [
   {
     level: 1,
-    title: "Junior Developer I (کف جذب)",
+    title: "Junior Developer I",
     experience: "۰-۶",
     hardSkills: [
-      "پروژه‌های پایه با React و Next.js",
+      "پروژه‌های پایه با React",
       "آشنایی با MUI برای UI",
       "آشنایی با تست End-to-End (مثل Cypress)",
       "آشنایی با مهندسی نرم‌افزار (پایه‌های Agile)",
       "کار با TypeScript در پروژه‌های ساده",
       "درک Event Loop و متدهای آرایه JS",
       "ریسپانسیو با CSS و MUI",
+      "مدیریت State ساده (Context API)",
       "تجربه پایه با Charts (مثل Chart.js)",
     ],
     softSkills: [
@@ -33,11 +34,11 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
         "چندین پروژه جدی با React/Next.js",
         "مسلط به MUI و کاستومایزیشن",
         "تست End-to-End با تجربه عملی",
-        "دانش مهندسی نرم‌افزار (الگوهای طراحی پایه)",
+        "آشنایی با دانش مهندسی نرم‌افزار (الگوهای طراحی پایه)",
         "TypeScript پیشرفته (Interfaces, Generics)",
         "درک عمیق Event Loop و Async JS",
         "متدهای آرایه + Functional Programming پایه",
-        "ریسپانسیو پیشرفته + Media Queries",
+        "CSS-in-JS (Styled Components)",
         "کار با Charts پیچیده‌تر (مثل Recharts)",
     ],
     softSkills: [
@@ -57,12 +58,14 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     hardSkills: [
         "بهینه‌سازی عملکرد در React (Memoization)",
         "ادغام APIها با Next.js",
+        "State Management پیشرفته (Redux-toolkit/Zustand)",
         "تست Unit/Integration علاوه بر E2E",
+        "متدهای ECMAScript",
         "الگوهای طراحی نرم‌افزار (مثل MVC)",
         "TypeScript با Strict Mode",
-        "مدیریت State ساده (Context API)",
-        "CSS-in-JS (Styled Components)",
-        "Charts با دیتای دینامیک",
+        "ریسپانسیو پیشرفته + Media Queries",
+        "آشنایی با Web Components",
+        "تجربه کار با storybook",
     ],
     softSkills: [
         "حل مسئله تیمی",
@@ -80,12 +83,13 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     experience: "۱۸-۲۴",
     hardSkills: [
         "SSR/SSG در Next.js",
-        "State Management پیشرفته (Redux/Zustand)",
+        "React-Query",
         "تست اتوماتیک با CI/CD",
         "اصول SOLID در کد",
         "TypeScript با Utility Types",
         "درک Browser Rendering",
         "انیمیشن با CSS/Framer Motion",
+        "websocket",
         "مقدماتی Data Viz (D3.js پایه)",
     ],
     softSkills: [
@@ -144,6 +148,7 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
         "رهبری فنی پروژه‌ها",
         "ارزیابی ابزارها",
         "بهبود فرآیندها",
+         "جذب و ارزیابی نیرو",
     ]
   },
   {
@@ -152,10 +157,9 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     experience: "۳۶-۴۲",
     hardSkills: [
         "PWA و Offline Support",
-        "State Management سفارشی",
+        "State Management بهینه سازی",
         "تست E2E پیشرفته (Playwright)",
         "اصول Architecture (Microservices Front)",
-        "TypeScript با Generics پیچیده",
         "درک V8 Engine",
         "Three.js برای Viz ساده",
         "Data Viz با Performance Optimization",
@@ -190,7 +194,6 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     ],
     responsibilities: [
         "معماری کل فرانت‌اند",
-        "کد ریویو高级",
         "نوآوری در ابزارها",
     ]
   },
@@ -210,12 +213,10 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     ],
     softSkills: [
         "مدیریت تیم کامل",
-        "بودجه و منابع",
     ],
     responsibilities: [
         "رهبری تیم توسعه",
         "تصمیم‌گیری استراتژیک",
-        "جذب و ارزیابی نیرو",
     ]
   },
   {
@@ -226,11 +227,8 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
         "ساخت لایبرری‌های پیچیده (State Mgmt)",
         "تجربه مدیریت تیم ۱۰ نفره",
         "همه جوانب Data Viz (Three.js عملی)",
-        "صاحب‌نظر Clean Code (کنفرانس/کتاب)",
-        "TypeScript در سیستم‌های بزرگ",
         "WebAssembly پایه",
         "Viz با ML Integration",
-        "حداقل سابقه معادل ۵ سال (با پیشرفت سریع)",
     ],
     softSkills: [
         "رهبری سازمانی",
@@ -238,7 +236,6 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     ],
     responsibilities: [
         "طراحی معماری سازمانی",
-        "نوآوری محصول",
         "مشاوره به مدیریت",
     ]
   },
@@ -251,7 +248,6 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
         "چندین لایبرری ساخته (State, UI)",
         "مسلط به همه Viz (Three.js + WebGL)",
         "مدیریت تیم‌های بزرگ",
-        "صاحب‌نظر جهانی Clean Code",
         "سابقه معادل ۵.۵ سال+",
     ],
     softSkills: [
@@ -261,7 +257,6 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
     responsibilities: [
         "رهبری نوآوری",
         "استانداردسازی صنعت",
-        "مشاوره خارجی",
     ]
   },
   {
@@ -273,7 +268,6 @@ export const CAREER_PATH_DATA: SkillLevel[] = [
         "چندین لایبرری پیچیده (State Mgmt سفارشی)",
         "تسلط کامل Data Viz (Three.js عملی پیشرفته)",
         "مدیریت تیم ۱۰+ نفره",
-        "صاحب‌نظر برجسته Clean Code (مقالات/کتاب)",
         "حداقل سابقه معادل ۶ سال (با تمرکز روی نوآوری)",
     ],
     softSkills: [
