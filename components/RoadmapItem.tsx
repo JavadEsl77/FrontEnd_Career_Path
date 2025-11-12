@@ -19,11 +19,11 @@ const AccordionItem: React.FC<{ title: string; icon: React.ReactNode; isOpen: bo
           {icon}
           <span className="mr-3 ltr:mr-0 ltr:ml-3">{title}</span>
         </span>
-        <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} viewBox="0 0 20 20" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transition-transform duration-300 accordion-chevron ${isOpen ? 'rotate-180' : ''}`} viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
         </svg>
       </button>
-      <div className={`grid transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+      <div className={`grid transition-all duration-500 ease-in-out accordion-content ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className="overflow-hidden">
             <div className="p-5 pt-2 text-sm text-gray-300">
              {children}
@@ -218,9 +218,9 @@ const RoadmapItem = React.forwardRef<HTMLDivElement, RoadmapItemProps>(({ item, 
     : (lang === 'fa' ? 'opacity-0 translate-x-6' : 'opacity-0 -translate-x-6');
 
   return (
-    <div ref={ref} className="relative w-full mb-12">
+    <div ref={ref} className="relative w-full mb-12 roadmap-level-card">
         {/* Dot on the timeline */}
-        <div className="absolute z-20 w-12 h-12 bg-gray-900 rounded-full border-4 border-blue-500 flex items-center justify-center text-lg font-bold top-4 right-6 translate-x-1/2 ltr:left-6 ltr:right-auto ltr:-translate-x-1/2">
+        <div className="absolute z-20 w-12 h-12 bg-gray-900 rounded-full border-4 border-blue-500 flex items-center justify-center text-lg font-bold top-4 right-6 translate-x-1/2 ltr:left-6 ltr:right-auto ltr:-translate-x-1/2 timeline-dot">
           {item.level}
         </div>
         
